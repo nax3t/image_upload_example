@@ -31,7 +31,7 @@
 
 
 ```
-5. Add multer and cloudinary configuration code to your routes file:
+5. Add multer and cloudinary configuration code to your /routes/campgrounds.js file:
 ```JS
 var multer = require('multer');
 var storage = multer.diskStorage({
@@ -81,3 +81,4 @@ cloudinary.uploader.upload(req.file.path, function(result) {
 });
 ```
 10. If you're using Google maps then you'll need to put all of the cloudinary code from above inside of the geocoder.geocode() callback. If you're not using Google maps then you can ignore this step.
+11. I have only included code for creating campgrounds, you'll have to implement editing campgrounds on your own (for now)
