@@ -1,4 +1,5 @@
 # Image Upload Instructions
+Video tutorial available [here](https://youtu.be/RHd4rP9U9SA)
 1. Sign up for [cloudinary](https://cloudinary.com/)
     - Don't forget to check your email and activate your account
 2. Install multer and cloudinary into your project
