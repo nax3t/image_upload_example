@@ -2,12 +2,13 @@
     <div class="row">
         <h1 style="text-align: center">Edit <%= campground.name %></h1>
         <div style="width: 30%; margin: 25px auto;">
-            <form action="/campgrounds/<%=campground._id%>?_method=PUT" method="POST">
+            <form action="/campgrounds/<%=campground._id%>?_method=PUT" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <input class="form-control" type="text" name="name" value="<%= campground.name %>">
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="image" value="<%= campground.image %>">
+                    <label for="image">Image</label>
+                    <input type="file" id="image" name="image" accept="image/*">
                 </div>
                 <div class="form-group">
                     <input class="form-control" type="text" name="description" value="<%= campground.description %>">
